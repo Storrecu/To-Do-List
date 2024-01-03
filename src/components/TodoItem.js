@@ -1,23 +1,13 @@
 import React from 'react';
 import '../styles/layout/TodoItem.scss';
-import X from '../images/X.png';
-import Check from '../images/Check.png';
 
 const TodoItem = (props) => {
   return (
     <>
       <li className="todo__list-item">
-        <img
-          className="todo__list-item-check"
-          src={Check}
-          alt="cheked symbol"
-        />
+        <i className="fa-solid fa-check todo__list-item-check"></i>
         <p className="todo__list-item-text">{props.text}</p>
-        <img
-          className="todo__list-item-cross"
-          src={X}
-          alt="cross symbol for close task"
-        />
+        <i className="fa-solid fa-xmark todo__list-item-cross"></i>
       </li>
     </>
   );

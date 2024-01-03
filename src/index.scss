@@ -1,11 +1,13 @@
-html {
+body {
   background-color: #f2f4f5;
-  font-family: Montserrat;
+  color: #1e1e1f;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f4f5;
+  position: relative;
+  min-height: 100vh;
 }

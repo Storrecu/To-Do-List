@@ -3,17 +3,18 @@
   flex-direction: row;
   align-items: center;
   gap: 3rem;
-  margin: 2rem;
+  margin: 24px;
   background-color: white;
-  max-width: 450px;
-  height: 100px;
+  width: 330px;
+  min-height: 100px;
   position: relative;
+  box-shadow: 0px 5px 50px 0px rgba(32, 35, 41, 0.15);
 
-  &-tick {
+  &-check {
     color: rgb(118, 118, 118);
     font-weight: bolder;
-    font-size: 30px;
-    margin-left: 5%;
+    margin-left: 8%;
+    width: 24px;
 
     &:hover {
       color: lightgreen;
@@ -21,16 +22,17 @@
   }
 
   &-text {
-    font-size: 20px;
+    font-size: 18px;
+    max-width: 200px;
   }
 
   &-cross {
     color: rgb(118, 118, 118);
     font-weight: bolder;
-    font-size: 30px;
     position: absolute;
     left: 90%;
-    top: -17px;
+    top: -12px;
+    width: 24px;
 
     &:hover {
       color: red;

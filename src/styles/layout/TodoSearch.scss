@@ -1,11 +1,14 @@
 .search__input {
   border-color: black;
   text-align: center;
-  font-size: 25px;
-  padding: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 24px 64px;
   width: 280px;
+  height: 55px;
+  box-shadow: 0px 5px 50px 0px rgba(32, 35, 41, 0.15);
+
   &::placeholder {
-    color: gray;
-    font-style: italic;
+    color: #aaa;
   }
 }

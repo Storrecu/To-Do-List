@@ -1,0 +1,39 @@
+.todo__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem;
+  background-color: white;
+  max-width: 450px;
+  height: 100px;
+  position: relative;
+
+  &-tick {
+    color: rgb(118, 118, 118);
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 5%;
+
+    &:hover {
+      color: lightgreen;
+    }
+  }
+
+  &-text {
+    font-size: 20px;
+  }
+
+  &-cross {
+    color: rgb(118, 118, 118);
+    font-weight: bolder;
+    font-size: 30px;
+    position: absolute;
+    left: 90%;
+    top: -17px;
+
+    &:hover {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.search__input {
+  border-color: black;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  width: 280px;
+  &::placeholder {
+    color: gray;
+    font-style: italic;
+  }
+}

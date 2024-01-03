@@ -7,6 +7,7 @@ const TodoItem = (props) => {
       <li className="todo_item">
         <span
           className={`icon iconCheck ${props.completed && 'iconCheck--active'}`}
+          onClick={props.onComplete}
         >
           <i className="fa-solid fa-check"></i>
         </span>
@@ -19,7 +20,7 @@ const TodoItem = (props) => {
           {props.text}
         </p>
 
-        <span className={`icon iconDelete`}>
+        <span className={`icon iconDelete`} onClick={props.onDelete}>
           <i className="fa-solid fa-xmark"></i>
         </span>
       </li>

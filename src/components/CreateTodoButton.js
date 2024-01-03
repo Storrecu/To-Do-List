@@ -7,6 +7,11 @@ const CreateTodoButton = () => {
     <>
       <div>
         <img
+          onClick={(event) => {
+            console.log('has clickado al botón añadir tarea');
+            console.log(event);
+            console.log(event.target);
+          }}
           className="button__add-task"
           src={AddTaskButton}
           alt="button to add a new task on list"

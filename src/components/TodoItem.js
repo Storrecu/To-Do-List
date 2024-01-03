@@ -4,10 +4,24 @@ import '../styles/layout/TodoItem.scss';
 const TodoItem = (props) => {
   return (
     <>
-      <li className="todo__list-item">
-        <i className="fa-solid fa-check todo__list-item-check"></i>
-        <p className="todo__list-item-text">{props.text}</p>
-        <i className="fa-solid fa-xmark todo__list-item-cross"></i>
+      <li className="todo_item">
+        <span
+          className={`icon iconCheck ${props.completed && 'iconCheck--active'}`}
+        >
+          <i className="fa-solid fa-check"></i>
+        </span>
+
+        <p
+          className={`todo_item-p ${
+            props.completed && 'todo_item-p--completed'
+          }`}
+        >
+          {props.text}
+        </p>
+
+        <span className={`icon iconDelete`}>
+          <i className="fa-solid fa-xmark"></i>
+        </span>
       </li>
     </>
   );

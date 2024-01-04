@@ -21,8 +21,9 @@ const App = () => {
   // States
   const [searchValue, setSearchValue] = useState('');
   const [todos, setTodos] = useState(defaultTodos);
+  const [counterMessage, setCounterMessage] = useState('');
 
-  // Effects
+  // Filters
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
   const totalTodos = todos.length;
@@ -48,9 +49,24 @@ const App = () => {
     setTodos(newTodos);
   };
 
+  const checkTodosCompleteds = () => {
+    if (completedTodos === totalTodos) {
+      setCounterMessage('Has completado todas las tareas pendientes.');
+    } else {
+      setCounterMessage(
+        `Has completado ${completedTodos} de ${totalTodos} TODOs.`
+      );
+    }
+  };
+
   return (
     <>
-      <TodoCounter completed={completedTodos} total={totalTodos} />
+      <TodoCounter
+        completed={completedTodos}
+        total={totalTodos}
+        counterMessage={counterMessage}
+        checkTodosCompleteds={() => checkTodosCompleteds}
+      />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
 
       <TodoList>

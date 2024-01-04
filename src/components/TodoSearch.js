@@ -4,6 +4,7 @@ import '../styles/layout/TodoSearch.scss';
 const TodoSearch = ({ searchValue, setSearchValue }) => {
   return (
     <>
+      <h2>Buscar tarea</h2>
       <input
         className="todo-search"
         type="text"

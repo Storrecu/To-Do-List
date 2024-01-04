@@ -1,11 +1,16 @@
 import React from 'react';
+import { useState } from 'react';
 import '../styles/layout/CreateTodoButton.scss';
 import AddTaskButton from '../images/Button Open Modal.svg';
 
 const CreateTodoButton = () => {
+  const [showTooltip, setShowTooltip] = useState(false);
   return (
     <>
-      <div>
+      <div
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+      >
         <img
           onClick={(event) => {
             console.log('has clickado al botón añadir tarea');
@@ -16,6 +21,7 @@ const CreateTodoButton = () => {
           src={AddTaskButton}
           alt="button to add a new task on list"
         />
+        {showTooltip && <div className="tooltip"> Añade una nueva tarea </div>}
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import { TodoModal } from './TodoModal';
 import AddTaskButton from '../images/Button Open Modal.svg';
 import '../styles/layout/CreateTodoButton.scss';
 
-const CreateTodoButton = () => {
+const CreateTodoButton = ({ addNewTodo }) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => {
@@ -22,7 +22,12 @@ const CreateTodoButton = () => {
           src={AddTaskButton}
           alt="button to add a new task on list"
         />
-        {showModal && <TodoModal handleShowModal={handleShowModal} />}
+        {showModal && (
+          <TodoModal
+            handleShowModal={handleShowModal}
+            addNewTodo={addNewTodo}
+          />
+        )}
       </div>
     </>
   );

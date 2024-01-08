@@ -56,8 +56,19 @@ const App = () => {
       setCounterMessage('Has completado todas las tareas pendientes.');
     } else {
       setCounterMessage(
-        `Has completado ${completedTodos} de ${totalTodos} TODOs.`
+        `Has completado ${completedTodos} de ${totalTodos} tareas.`
       );
+    }
+  };
+
+  const addNewTodo = (newTodoText) => {
+    const newTodos = [...todos];
+    const isTodoExists = newTodos.some((todo) => todo.text === newTodoText);
+    if (isTodoExists) {
+      alert('Esa tarea ya está en la lista');
+    } else {
+      const newTodo = { text: newTodoText, completed: false };
+      setTodos([...newTodos, newTodo]);
     }
   };
 
@@ -82,7 +93,7 @@ const App = () => {
         {}
       </TodoList>
 
-      <CreateTodoButton>
+      <CreateTodoButton addNewTodo={addNewTodo}>
         <TodoModal />
       </CreateTodoButton>
     </>

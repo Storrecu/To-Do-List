@@ -8,7 +8,7 @@ const TodoSearch = ({ searchValue, setSearchValue }) => {
       <input
         className="todo-search"
         type="text"
-        placeholder="Cortar la cebolla"
+        placeholder="Hacer la compra"
         value={searchValue}
         onChange={(event) => {
           setSearchValue(event.target.value);

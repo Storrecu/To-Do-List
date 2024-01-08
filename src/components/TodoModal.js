@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import '../styles/layout/TodoModal.scss';
 
 const TodoModal = ({ handleShowModal, addNewTodo }) => {
   const [newTodoText, setNewTodoText] = useState('');
@@ -11,24 +12,27 @@ const TodoModal = ({ handleShowModal, addNewTodo }) => {
     }
   };
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <div className="modal-header">
-          <h3 className="modal-title">Añadir nueva tarea</h3>
-        </div>
-        <div className="modal-body">
+    <section className="todo-modal">
+      <article className="todo-modal-content">
+        <header className="todo-modal-content-header">
+          <h2 className="todo-modal-content-header-title">
+            Añadir nueva tarea
+          </h2>
+        </header>
+        <div className="todo-modal-content-body">
           <input
+            className="todo-search"
             type="text"
             placeholder="Escribe una tarea"
             onChange={(e) => setNewTodoText(e.target.value)}
           />
         </div>
-        <div className="modal-footer">
+        <footer className="todo-modal-content-footer">
           <button onClick={handleShowModal}>Cerrar sección</button>
           <button onClick={handleAddNewTodo}> Añadir tarea</button>
-        </div>
-      </div>
-    </div>
+        </footer>
+      </article>
+    </section>
   );
 };
 

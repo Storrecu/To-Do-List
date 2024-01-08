@@ -13,7 +13,7 @@ const CreateTodoButton = ({ addNewTodo }) => {
 
   return (
     <>
-      <div>
+      <div className="button">
         <img
           onClick={() => {
             handleShowModal();

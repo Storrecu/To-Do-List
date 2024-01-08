@@ -1,6 +1,24 @@
-.button__add-task {
-  // position: absolute;
-  // left: 70%;
-  // top: 106%;
-  position: sticky;
+.button {
+  width: 65px;
+  height: 65px;
+  position: relative;
+
+  &__add-task {
+    margin: 0 auto;
+    display: block;
+  }
 }
+
+// .button {
+//   width: 65px;
+//   height: 65px;
+//   position: absolute;
+
+//   &__add-task {
+//     position: absolute;
+//     margin: 0 auto;
+//     top: 25%; /* sirve en caso de un div como este, donde tiene una altura definida, en caso de que la altura no este definida esta edición no se pone ; */
+//     right: 0; /* se debe usar para que margin 0 auto funcione */
+//     left: 0;
+//   }
+// }

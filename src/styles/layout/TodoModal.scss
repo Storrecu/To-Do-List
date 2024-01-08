@@ -1,0 +1,34 @@
+.todo-modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f2f4f5;
+  color: #1e1e1f;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+
+  &-content {
+    padding: 0 0 56px 0;
+    &-header {
+      &-title {
+        text-align: center;
+      }
+    }
+    // &-body {
+    // }
+    &-footer {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        border: none;
+        background-color: #61dafa;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

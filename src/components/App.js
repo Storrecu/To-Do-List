@@ -6,6 +6,7 @@ import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
+import { TodoModal } from './TodoModal';
 import '../styles/App.scss';
 
 const defaultTodos = [
@@ -81,7 +82,9 @@ const App = () => {
         {}
       </TodoList>
 
-      <CreateTodoButton />
+      <CreateTodoButton>
+        <TodoModal />
+      </CreateTodoButton>
     </>
   );
 };

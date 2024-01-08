@@ -1,27 +1,27 @@
 import React from 'react';
 import { useState } from 'react';
-import '../styles/layout/CreateTodoButton.scss';
+import { TodoModal } from './TodoModal';
 import AddTaskButton from '../images/Button Open Modal.svg';
+import '../styles/layout/CreateTodoButton.scss';
 
 const CreateTodoButton = () => {
-  const [showTooltip, setShowTooltip] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setShowModal(!false);
+  };
   return (
     <>
-      <div
-        onMouseEnter={() => setShowTooltip(true)}
-        onMouseLeave={() => setShowTooltip(false)}
-      >
+      <div>
         <img
-          onClick={(event) => {
-            console.log('has clickado al botón añadir tarea');
-            console.log(event);
-            console.log(event.target);
+          onClick={() => {
+            handleCloseModal();
           }}
           className="button__add-task"
           src={AddTaskButton}
           alt="button to add a new task on list"
         />
-        {showTooltip && <div className="tooltip"> Añade una nueva tarea </div>}
+        {showModal && <TodoModal />}
       </div>
     </>
   );

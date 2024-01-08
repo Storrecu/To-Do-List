@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Storrecu/To-Do-List/static/css/main.244330bf.css",
-    "main.js": "/Storrecu/To-Do-List/static/js/main.c74bb25f.js",
-    "static/js/787.32e0067b.chunk.js": "/Storrecu/To-Do-List/static/js/787.32e0067b.chunk.js",
-    "static/media/Button Open Modal.svg": "/Storrecu/To-Do-List/static/media/Button Open Modal.e023e8864fff3da39b32bbd581206a20.svg",
-    "index.html": "/Storrecu/To-Do-List/index.html",
-    "main.244330bf.css.map": "/Storrecu/To-Do-List/static/css/main.244330bf.css.map",
-    "main.c74bb25f.js.map": "/Storrecu/To-Do-List/static/js/main.c74bb25f.js.map",
-    "787.32e0067b.chunk.js.map": "/Storrecu/To-Do-List/static/js/787.32e0067b.chunk.js.map"
+    "main.css": "/To-Do-List/static/css/main.244330bf.css",
+    "main.js": "/To-Do-List/static/js/main.80728b5e.js",
+    "static/js/787.32e0067b.chunk.js": "/To-Do-List/static/js/787.32e0067b.chunk.js",
+    "static/media/Button Open Modal.svg": "/To-Do-List/static/media/Button Open Modal.e023e8864fff3da39b32bbd581206a20.svg",
+    "index.html": "/To-Do-List/index.html",
+    "main.244330bf.css.map": "/To-Do-List/static/css/main.244330bf.css.map",
+    "main.80728b5e.js.map": "/To-Do-List/static/js/main.80728b5e.js.map",
+    "787.32e0067b.chunk.js.map": "/To-Do-List/static/js/787.32e0067b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.244330bf.css",
-    "static/js/main.c74bb25f.js"
+    "static/js/main.80728b5e.js"
   ]
 }

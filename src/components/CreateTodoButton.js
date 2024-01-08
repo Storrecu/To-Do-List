@@ -22,7 +22,7 @@ const CreateTodoButton = () => {
           src={AddTaskButton}
           alt="button to add a new task on list"
         />
-        {showModal && <TodoModal />}
+        {showModal && <TodoModal handleShowModal={handleShowModal} />}
       </div>
     </>
   );

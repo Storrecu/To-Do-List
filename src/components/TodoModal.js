@@ -1,6 +1,11 @@
 import React from 'react';
+// import { useEffect } from 'react';
 
-const TodoModal = () => {
+const TodoModal = ({ handleShowModal }) => {
+  // useEffect(() => {
+  //   handleShowModal();
+  // }, [handleShowModal]);
+
   return (
     <div className="modal">
       <div className="modal-content">
@@ -11,7 +16,7 @@ const TodoModal = () => {
           <input type="text" placeholder="escribe una tarea" />
         </div>
         <div className="modal-footer">
-          <button>Cerrar</button>
+          <button onClick={handleShowModal}>Cerrar</button>
         </div>
       </div>
     </div>

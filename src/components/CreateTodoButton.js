@@ -7,15 +7,16 @@ import '../styles/layout/CreateTodoButton.scss';
 const CreateTodoButton = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleCloseModal = () => {
-    setShowModal(!false);
+  const handleShowModal = () => {
+    setShowModal(!showModal);
   };
+
   return (
     <>
       <div>
         <img
           onClick={() => {
-            handleCloseModal();
+            handleShowModal();
           }}
           className="button__add-task"
           src={AddTaskButton}

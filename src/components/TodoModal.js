@@ -14,17 +14,17 @@ const TodoModal = ({ handleShowModal, addNewTodo }) => {
     <div className="modal">
       <div className="modal-content">
         <div className="modal-header">
-          <h3 className="modal-title">Añade una nueva tarea</h3>
+          <h3 className="modal-title">Añadir nueva tarea</h3>
         </div>
         <div className="modal-body">
           <input
             type="text"
-            placeholder="escribe una tarea"
+            placeholder="Escribe una tarea"
             onChange={(e) => setNewTodoText(e.target.value)}
           />
         </div>
         <div className="modal-footer">
-          <button onClick={handleShowModal}>Cerrar</button>
+          <button onClick={handleShowModal}>Cerrar sección</button>
           <button onClick={handleAddNewTodo}> Añadir tarea</button>
         </div>
       </div>

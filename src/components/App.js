@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { Routes, Route } from 'react-router-dom';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
@@ -7,6 +7,7 @@ import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 import { TodoModal } from './TodoModal';
+import ls from '../services/localStorage';
 import '../styles/App.scss';
 
 const defaultTodos = [
@@ -21,8 +22,13 @@ const defaultTodos = [
 const App = () => {
   // States
   const [searchValue, setSearchValue] = useState('');
-  const [todos, setTodos] = useState(defaultTodos);
+  const [todos, setTodos] = useState(ls.get('updatedTasks', defaultTodos));
   const [counterMessage, setCounterMessage] = useState('');
+
+  // Effects:
+  useEffect(() => {
+    ls.set('updatedTasks', todos);
+  }, [todos]);
 
   // Filters
   const completedTodos = todos.filter((todo) => !!todo.completed).length;

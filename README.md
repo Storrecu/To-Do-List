@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Lista de tareas :es:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es el clásico ejerccio de JavaScript: la lista de tareas.
+Este proyecto permite crear una lista de tareas personalizada: puedes eliminar las tareas que vienen por defecto, crear nuevas tareas y marcarlas como completadas. 
+También puedes buscar tareas por nombre. Así, en el caso que tengas muchas tareas haciendo una simple búsqueda por nombre podrás ver todas las tareas que concuerdan con tu búsqueda.
 
-## Available Scripts
+## Requisitos: 
 
-In the project directory, you can run:
+- Mostrar un listado de tareas por defecto.
+- Permitir tachar una tarea, para marcarla como completada.
+- Permitir eliminar una tarea de la lista.
+- Permitir añadir una tarea nueva al listado.
+- Crear un botón que permita añadir tareas.
 
-### `npm start`
+## Extras: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Habilitar la casilla para buscar tareas por nombre.
+-Ocultar la sección para añadir tareas y que sólo esté visible al hacer click en el botón.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Próximas mejoras: 
 
-### `npm test`
+- Mejorar estilo en general de la aplicación.
+- Refactorizar o mejorar rendimiento del código.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack: 
 
-### `npm run build`
+-Plantilla de react js.
+- JavaScript
+- Sass
+- Local storage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Visualización del proyecto: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este proyecto esá desplegado en GitHub Pages, con lo cual, visitando el siguiente enlace podrás ver el resultado: https://storrecu.github.io/To-Do-List/
+Este mismo enlace, podrás encontrarlo en la esquina superior derecha, en la sección "About".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Pasos para arrancar el proyecto.
 
-### `npm run eject`
+1. Ubica el botón azul con el texto: <> Code y copia la URL que aparece en HTTPS.
+2. Abre la terminal en tu equipo y decide en que carpeta guardarás el proyecto. Una vez te hayas ubicado, ejecuta el comando: ```git clone ```seguido de la URL que has copiado anteriormente.
+3. Abre el proyecto en Visual Studio Code y abre la terminal.
+4. Ejecuta ```npm install ```
+5. A continuación ejecuta ```npm start ``` . Se abrirá el proyecto en una pestaña de tu navegador para ver el proyecto.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contribución.
+Estoy abierta a cualquier mejora, sugerencia o feedback que quieras comunicarme. No tengas reparos en comunicarte conmigo mediante correo o linkedIn: 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/silviatorrecu) 
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:silviatc1993@gmail.com)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+***
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# To do list 🇬🇧
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This is the classic JavaScript exercise: the to-do list.
+This project allows you to create a customized to-do list: you can delete default tasks, create new tasks, and mark them as completed.
+You can also search for tasks by name. Thus, if you have many tasks, a simple search by name will allow you to see all tasks that match your search.
 
-## Learn More
+## Requirements:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Display a list of default tasks.
+- Allow crossing out a task to mark it as completed.
+- Allow deleting a task from the list.
+- Allow adding a new task to the list.
+- Create a button that allows adding tasks.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Extras:
 
-### Code Splitting
+- Enable the checkbox to search for tasks by name.
+- Hide the section to add tasks and only make it visible when clicking the button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Next Improvements:
 
-### Analyzing the Bundle Size
+- Improve the overall style of the application.
+- Refactor or improve code performance.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tech Stack:
 
-### Making a Progressive Web App
+- React.js template.
+- JavaScript
+- Sass
+- Local storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Visualization:
 
-### Advanced Configuration
+This project is deployed on GitHub Pages, so by visiting the following link you can see the result: [https://storrecu.github.io/To-Do-List/](https://storrecu.github.io/To-Do-List/)
+You can also find this link in the top right corner, under the "About" section.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Steps to Start the Project.
 
-### Deployment
+1. Locate the blue button with the text: <> Code and copy the URL that appears in HTTPS.
+2. Open the terminal on your computer and decide in which folder you will save the project. Once you have located yourself, execute the command: ```git clone``` followed by the URL you copied earlier.
+3. Open the project in Visual Studio Code and open the terminal.
+4. Run ```npm install```
+5. Next, run ```npm start``` . The project will open in a tab of your browser to view the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contribution.
+I am open to any improvement, suggestion, or feedback you want to communicate to me. Feel free to contact me via email or LinkedIn: 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/silviatorrecu) 
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:silviatc1993@gmail.com)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWhsaG05MnE2Zmc0aDl3Z2d4aXJqOGxjazVvdGdpbThndzZ2dXlsbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HYYbdk46gUzrgWi1Iz/giphy.gif)
+
